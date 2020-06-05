@@ -1,0 +1,562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9BF472B2-7B81-454E-9228-8F941F681881}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StudentPlan</RootNamespace>
+    <AssemblyName>StudentPlan</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\..\..\My Code\GridAddEditDelete\GridAddEditDelete\GridAddEditDelete\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControl">
+      <HintPath>..\..\CompCareOLD\CompCareWebsite\bin\FlashControl.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\..\..\..\Stuff\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="ApplyNow.aspx" />
+    <Content Include="ConfirmDetails.aspx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DependantMedical.aspx" />
+    <Content Include="DownloadForm.aspx" />
+    <Content Include="empdata.xml" />
+    <Content Include="Flash\anim.swf" />
+    <Content Include="Flash\brokers.swf" />
+    <Content Include="Flash\CompCareLogo.swf" />
+    <Content Include="Flash\contactUs.swf" />
+    <Content Include="Flash\home.swf" />
+    <Content Include="Flash\members.swf" />
+    <Content Include="Flash\newMembers.swf" />
+    <Content Include="Flash\providers.swf" />
+    <Content Include="Flash\scheme.swf" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\3.png" />
+    <Content Include="Images\3dSecure.jpg" />
+    <Content Include="Images\aboutusFlash.jpg" />
+    <Content Include="Images\ABSALogo.jpg" />
+    <Content Include="Images\AIESECLogo.png" />
+    <Content Include="Images\applyNow.jpg" />
+    <Content Include="Images\applynowFlash.jpg" />
+    <Content Include="Images\applyOnlineBar.jpg" />
+    <Content Include="Images\applyOnlineBar.png" />
+    <Content Include="Images\arrow_r.gif" />
+    <Content Include="Images\axis.jpg" />
+    <Content Include="Images\axisTable.jpg" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\bg_foot_td.gif" />
+    <Content Include="Images\bg_foot_td_on.gif" />
+    <Content Include="Images\bg_foot_td_on2.gif" />
+    <Content Include="Images\bg_foot_td_side.gif" />
+    <Content Include="Images\bg_form.gif" />
+    <Content Include="Images\bg_form.png" />
+    <Content Include="Images\bg_td.gif" />
+    <Content Include="Images\bg_td.jpg" />
+    <Content Include="Images\bg_td_on.gif" />
+    <Content Include="Images\bg_td_on.jpg" />
+    <Content Include="Images\bg_td_side.gif" />
+    <Content Include="Images\bg_th.gif" />
+    <Content Include="Images\bg_th2.gif" />
+    <Content Include="Images\bg_th_on.gif" />
+    <Content Include="Images\bg_th_on2.gif" />
+    <Content Include="Images\bg_th_side.gif" />
+    <Content Include="Images\bigButton.jpg" />
+    <Content Include="Images\blanc.png" />
+    <Content Include="Images\blank.gif" />
+    <Content Include="Images\bottomShadow.jpg" />
+    <Content Include="Images\brokersHomeBackground.jpg" />
+    <Content Include="Images\bt_close.png" />
+    <Content Include="Images\bt_login.png" />
+    <Content Include="Images\bt_open.png" />
+    <Content Include="Images\bt_register.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\ButtonsNormal.jpg" />
+    <Content Include="Images\buttonsOver.jpg" />
+    <Content Include="Images\button_cancel.gif" />
+    <Content Include="Images\button_submit.gif" />
+    <Content Include="Images\callCentreIcon.jpg" />
+    <Content Include="Images\cc_r1_c15_s1.jpg" />
+    <Content Include="Images\cc_r1_c16_s1.jpg" />
+    <Content Include="Images\cc_r1_c1_s1.jpg" />
+    <Content Include="Images\cc_r1_c2_s1.jpg" />
+    <Content Include="Images\cc_r1_c4_s1.jpg" />
+    <Content Include="Images\cc_r1_c5_s1.jpg" />
+    <Content Include="Images\cc_r2_c11_s1.jpg" />
+    <Content Include="Images\cc_r2_c11_s2.jpg" />
+    <Content Include="Images\cc_r2_c12_s1.jpg" />
+    <Content Include="Images\cc_r2_c12_s2.jpg" />
+    <Content Include="Images\cc_r2_c14_s1.jpg" />
+    <Content Include="Images\cc_r2_c14_s2.jpg" />
+    <Content Include="Images\cc_r2_c4_s1.jpg" />
+    <Content Include="Images\cc_r2_c5_s1.jpg" />
+    <Content Include="Images\cc_r2_c5_s2.jpg" />
+    <Content Include="Images\cc_r2_c6_s1.jpg" />
+    <Content Include="Images\cc_r2_c6_s2.jpg" />
+    <Content Include="Images\cc_r2_c8_s1.jpg" />
+    <Content Include="Images\cc_r2_c8_s2.jpg" />
+    <Content Include="Images\cc_r2_c9_s1.jpg" />
+    <Content Include="Images\cc_r2_c9_s2.jpg" />
+    <Content Include="Images\cc_r3_c15_s1.jpg" />
+    <Content Include="Images\cc_r4_c15_s1.jpg" />
+    <Content Include="Images\cc_r4_c4_s1.jpg" />
+    <Content Include="Images\cc_r4_c5_s1.jpg" />
+    <Content Include="Images\cc_r5_c10_s1.jpg" />
+    <Content Include="Images\cc_r5_c13_s1.jpg" />
+    <Content Include="Images\cc_r5_c15_s1.jpg" />
+    <Content Include="Images\cc_r5_c2_s1.jpg" />
+    <Content Include="Images\cc_r5_c3_s1.jpg" />
+    <Content Include="Images\cc_r5_c5_s1.jpg" />
+    <Content Include="Images\cc_r5_c7_s1.jpg" />
+    <Content Include="Images\cc_r6_c5_s1.jpg" />
+    <Content Include="Images\cc_r7_c2_s1.jpg" />
+    <Content Include="Images\cc_r7_c5_s1.jpg" />
+    <Content Include="Images\cc_r8_c2_s1.jpg" />
+    <Content Include="Images\cc_r9_c13_s1.jpg" />
+    <Content Include="Images\cc_r9_c2_s1.jpg" />
+    <Content Include="Images\cc_r9_c5_s1.jpg" />
+    <Content Include="Images\cc_s1.jpg" />
+    <Content Include="Images\cdeCentreLogo.jpg" />
+    <Content Include="Images\check.png" />
+    <Content Include="Images\choose.gif" />
+    <Content Include="Images\chronicMedicineLogo.jpg" />
+    <Content Include="Images\CompCareWellnessLogo.jpg" />
+    <Content Include="Images\contactusFlash.jpg" />
+    <Content Include="Images\DocFooter.jpg" />
+    <Content Include="Images\DocHeader.jpg" />
+    <Content Include="Images\doctor.jpg" />
+    <Content Include="Images\done.jpg" />
+    <Content Include="Images\dynamix.jpg" />
+    <Content Include="Images\dynamixTable.jpg" />
+    <Content Include="Images\facebookLink.jpg" />
+    <Content Include="Images\flashBack.jpg" />
+    <Content Include="Images\flower.png" />
+    <Content Include="Images\footer.jpg" />
+    <Content Include="Images\footerUniversalLogo.jpg" />
+    <Content Include="Images\header.jpg" />
+    <Content Include="Images\healthcare.jpg" />
+    <Content Include="Images\hivIcon.jpg" />
+    <Content Include="Images\homeFlash.jpg" />
+    <Content Include="Images\hospitalIcon.jpg" />
+    <Content Include="Images\ieasaLogo.jpg" />
+    <Content Include="Images\loadingAnim.gif" />
+    <Content Include="Images\mainFlash.jpg" />
+    <Content Include="Images\mapPlaceholder.jpg" />
+    <Content Include="Images\medsicorLogo.jpg" />
+    <Content Include="Images\membersHomeBackground.jpg" />
+    <Content Include="Images\midNavBlockBack_r1_c1_s1.jpg" />
+    <Content Include="Images\midNavBlockBack_r1_c1_s1.png" />
+    <Content Include="Images\midNavBlockBack_r1_c2_s1.jpg" />
+    <Content Include="Images\midNavBlockBack_r1_c2_s1.png" />
+    <Content Include="Images\midNavBlockBack_r1_c4_s1.jpg" />
+    <Content Include="Images\midNavBlockBack_r1_c4_s1.png" />
+    <Content Include="Images\midNavBlockBack_s1.jpg" />
+    <Content Include="Images\moreInfoBlock.jpg" />
+    <Content Include="Images\moreInfoBlock2.jpg" />
+    <Content Include="Images\mumed.jpg" />
+    <Content Include="Images\mumedTable.jpg" />
+    <Content Include="Images\networx.jpg" />
+    <Content Include="Images\networxTable.jpg" />
+    <Content Include="Images\nopicHomeBackground.jpg" />
+    <Content Include="Images\notDone.jpg" />
+    <Content Include="Images\optionsBox.jpg" />
+    <Content Include="Images\pageBackground.jpg" />
+    <Content Include="Images\partnersFlash.jpg" />
+    <Content Include="Images\partnersLogos.png" />
+    <Content Include="Images\partnersTop.jpg" />
+    <Content Include="Images\partners_r1_c1_s1.jpg" />
+    <Content Include="Images\partners_r1_c1_s2.jpg" />
+    <Content Include="Images\partners_r1_c2_s1.jpg" />
+    <Content Include="Images\partners_r1_c2_s2.jpg" />
+    <Content Include="Images\partners_r2_c1_s1.jpg" />
+    <Content Include="Images\partners_r2_c1_s2.jpg" />
+    <Content Include="Images\partners_r2_c2_s1.jpg" />
+    <Content Include="Images\partners_r2_c2_s2.jpg" />
+    <Content Include="Images\partners_r3_c1_s1.jpg" />
+    <Content Include="Images\pCDE.png" />
+    <Content Include="Images\pChrnoic.png" />
+    <Content Include="Images\pChronic.png" />
+    <Content Include="Images\pClicks.png" />
+    <Content Include="Images\pdfIcon.png" />
+    <Content Include="Images\pDirectMedicines.png" />
+    <Content Include="Images\pDischem.png" />
+    <Content Include="Images\pinacleBlock.jpg" />
+    <Content Include="Images\pinnacle.jpg" />
+    <Content Include="Images\pinnacleIcon.jpg" />
+    <Content Include="Images\pinnacleTable.jpg" />
+    <Content Include="Images\pLifestyle360.png" />
+    <Content Include="Images\pMedirite.png" />
+    <Content Include="Images\pMediscor.png" />
+    <Content Include="Images\progress_bg_large.gif" />
+    <Content Include="Images\progress_bg_lightblue.gif" />
+    <Content Include="Images\progress_green.gif" />
+    <Content Include="Images\progress_lightblue.gif" />
+    <Content Include="Images\progress_orange.gif" />
+    <Content Include="Images\progress_orange_large.gif" />
+    <Content Include="Images\progress_red.gif" />
+    <Content Include="Images\progress_solidblue.gif" />
+    <Content Include="Images\progress_yellow.gif" />
+    <Content Include="Images\providersHomeBackground.jpg" />
+    <Content Include="Images\pScriptSavers.png" />
+    <Content Include="Images\pUniversalAdministrators.png" />
+    <Content Include="Images\pUniversalCare.jpg" />
+    <Content Include="Images\pUniversalCare.png" />
+    <Content Include="Images\radialShadow.jpg" />
+    <Content Include="Images\radialShadow.png" />
+    <Content Include="Images\rightColumn.jpg" />
+    <Content Include="Images\rightColumn.png" />
+    <Content Include="Images\roundedCentre.jpg" />
+    <Content Include="Images\roundedLeft.jpg" />
+    <Content Include="Images\roundedRight.jpg" />
+    <Content Include="Images\roundedRightColumn.jpg" />
+    <Content Include="Images\roundedRightColumn.png" />
+    <Content Include="Images\schemeHomeBackground.jpg" />
+    <Content Include="Images\schemeOptions.jpg" />
+    <Content Include="Images\smallButton.jpg" />
+    <Content Include="Images\smallButton.png" />
+    <Content Include="Images\sp_r2_c2_s1.jpg" />
+    <Content Include="Images\sp_r2_c3_s1.jpg" />
+    <Content Include="Images\sp_r2_c3_s2.jpg" />
+    <Content Include="Images\sp_r2_c4_s1.jpg" />
+    <Content Include="Images\sp_r2_c4_s2.jpg" />
+    <Content Include="Images\sp_r2_c5_s1.jpg" />
+    <Content Include="Images\sp_r2_c5_s2.jpg" />
+    <Content Include="Images\sp_r2_c6_s1.jpg" />
+    <Content Include="Images\sp_r2_c6_s2.jpg" />
+    <Content Include="Images\sp_r2_c7_s1.jpg" />
+    <Content Include="Images\sp_r2_c7_s2.jpg" />
+    <Content Include="Images\sp_r2_c8_s1.jpg" />
+    <Content Include="Images\sp_r2_c8_s2.jpg" />
+    <Content Include="Images\step1.png" />
+    <Content Include="Images\step2.png" />
+    <Content Include="Images\step3.png" />
+    <Content Include="Images\step4.png" />
+    <Content Include="Images\stepsBack.png" />
+    <Content Include="Images\students.jpg" />
+    <Content Include="Images\subMenuItem.jpg" />
+    <Content Include="Images\subMenuItemNoItem.jpg" />
+    <Content Include="Images\subMenuItemNoItem2.jpg" />
+    <Content Include="Images\subMenuItemPdf.jpg" />
+    <Content Include="Images\symmetry.jpg" />
+    <Content Include="Images\symmetryTable.jpg" />
+    <Content Include="Images\tab_b.png" />
+    <Content Include="Images\tab_l.png" />
+    <Content Include="Images\tab_m.png" />
+    <Content Include="Images\tab_r.png" />
+    <Content Include="Images\telephone.jpg" />
+    <Content Include="Images\telephoneNumbers.jpg" />
+    <Content Include="Images\ten.jpg" />
+    <Content Include="Images\thBack.jpg" />
+    <Content Include="Images\twitterLink.jpg" />
+    <Content Include="Images\Universal360_logo.png" />
+    <Content Include="Images\UniversalAdministratorsLogo.png" />
+    <Content Include="Images\universalHealthcareLogo.jpg" />
+    <Content Include="Images\universalSmallLogo.jpg" />
+    <Content Include="Images\vcssecure.jpg" />
+    <Content Include="Images\VisaMaster.jpg" />
+    <Content Include="Images\VisaMaster.png" />
+    <Content Include="Images\welcomeBox.jpg" />
+    <Content Include="Images\xp.gif" />
+    <Content Include="Networx.aspx" />
+    <Content Include="OnlineApplicationForm.aspx" />
+    <Content Include="Partners.aspx" />
+    <Content Include="Payment.aspx" />
+    <Content Include="PreliminaryQuestions.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.5.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.custom.min.js" />
+    <Content Include="Scripts\jquery.blockUI.js" />
+    <Content Include="Scripts\jquery.ui.widget.js" />
+    <Content Include="Scripts\slide.js" />
+    <Content Include="Scripts\stcode.js" />
+    <Content Include="Scripts\steffie.js" />
+    <Content Include="Scripts\steffrect.js" />
+    <Content Include="Scripts\steffslip.js" />
+    <Content Include="Scripts\stmenu.js" />
+    <Content Include="studentPlanNavigation.html" />
+    <Content Include="StudentsHome.aspx" />
+    <Content Include="StudyInstitutionHome.aspx" />
+    <Content Include="Styles\jquery-ui-1.8.11.custom.css" />
+    <Content Include="Styles\StyleSheet.css" />
+    <Content Include="Success.aspx" />
+    <Content Include="TermsAndConditions.aspx" />
+    <Content Include="ThankYou.aspx" />
+    <Content Include="Unsuccessful.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApplyNow.aspx.cs">
+      <DependentUpon>ApplyNow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplyNow.aspx.designer.cs">
+      <DependentUpon>ApplyNow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmDetails.aspx.cs">
+      <DependentUpon>ConfirmDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmDetails.aspx.designer.cs">
+      <DependentUpon>ConfirmDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\UniversalModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UniversalModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DependantMedical.aspx.cs">
+      <DependentUpon>DependantMedical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DependantMedical.aspx.designer.cs">
+      <DependentUpon>DependantMedical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadForm.aspx.cs">
+      <DependentUpon>DownloadForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownloadForm.aspx.designer.cs">
+      <DependentUpon>DownloadForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Networx.aspx.cs">
+      <DependentUpon>Networx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Networx.aspx.designer.cs">
+      <DependentUpon>Networx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineApplicationForm.aspx.cs">
+      <DependentUpon>OnlineApplicationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineApplicationForm.aspx.designer.cs">
+      <DependentUpon>OnlineApplicationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Partners.aspx.cs">
+      <DependentUpon>Partners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Partners.aspx.designer.cs">
+      <DependentUpon>Partners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreliminaryQuestions.aspx.cs">
+      <DependentUpon>PreliminaryQuestions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreliminaryQuestions.aspx.designer.cs">
+      <DependentUpon>PreliminaryQuestions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPlanNMP.master.cs">
+      <DependentUpon>StudentPlanNMP.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentPlanNMP.master.designer.cs">
+      <DependentUpon>StudentPlanNMP.master</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsHome.aspx.cs">
+      <DependentUpon>StudentsHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentsHome.aspx.designer.cs">
+      <DependentUpon>StudentsHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudyInstitutionHome.aspx.cs">
+      <DependentUpon>StudyInstitutionHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudyInstitutionHome.aspx.designer.cs">
+      <DependentUpon>StudyInstitutionHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Success.aspx.cs">
+      <DependentUpon>Success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Success.aspx.designer.cs">
+      <DependentUpon>Success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TermsAndConditions.aspx.cs">
+      <DependentUpon>TermsAndConditions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TermsAndConditions.aspx.designer.cs">
+      <DependentUpon>TermsAndConditions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYou.aspx.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThankYou.aspx.designer.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Unsuccessful.aspx.cs">
+      <DependentUpon>Unsuccessful.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unsuccessful.aspx.designer.cs">
+      <DependentUpon>Unsuccessful.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="StudentPlanNMP.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Certificates\" />
+    <Folder Include="Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="DataModel\UniversalModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>UniversalModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Applications\TemplatePage1.pdf" />
+    <None Include="Applications\TemplatePage2.pdf" />
+    <None Include="Downloads\IEASA_Student_application_form.pdf" />
+    <None Include="Downloads\NetworxOption.pdf" />
+    <None Include="Downloads\NetworxOptionStudentPlan.pdf" />
+    <None Include="Downloads\NetworX_Brochure_2011.pdf" />
+    <None Include="Downloads\StudentApplicationForm.pdf" />
+    <None Include="Downloads\StudentPlanApplicationForm.pdf" />
+    <None Include="Downloads\StudentPlanApplicationFormAbsa.pdf" />
+    <None Include="Downloads\StudentPlanApplicationFormEsther.pdf" />
+    <None Include="Downloads\StudentPlanBrochure.pdf" />
+    <None Include="Styles\jquery-ui-1.8.11.custom%282%29.rar" />
+    <None Include="Styles\jquery-ui-1.8.11.custom.rar" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62540</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/StudentPlan</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

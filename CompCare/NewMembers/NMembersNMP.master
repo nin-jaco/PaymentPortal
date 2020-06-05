@@ -1,0 +1,162 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NMembersNMP.master.cs" Inherits="CompCareWebsite.NewMembers.NMembersNMP" %>
+
+<%@ Register Assembly="FlashControl" Namespace="Bewise.Web.UI.WebControls" TagPrefix="Bewise" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript" src="../Scripts/stmenu.js"></script>
+    <asp:ContentPlaceHolder ID="customScript" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainNavigation" runat="server">
+    <script type="text/javascript">
+<!--
+        stm_bm(["menu572f", 830, "../Images/", "blank.gif", 0, "", "", 0, 0, 250, 0, 1000, 1, 0, 0, "", "979", 0, 0, 1, 2, "default", "hand", ""], this);
+        stm_bp("p0", [0, 4, 0, 0, 0, 0, 0, 0, 100, "", -2, "", -2, 50, 0, 0, "#999999", "transparent", "", 3, 0, 0, "#000000"]);
+        stm_ai("p0i0", [0, "Home", "", "", -1, -1, 0, "../Default.aspx", "_self", "", "", "", "", 0, 0, 0, "", "", 0, 0, 0, 1, 1, "#E6EFF9", 0, "#FFFFFF", 0, "ButtonsNormal.jpg", "buttonsOver.jpg", 1, 1, 0, 0, "#E6EFF9", "#000000", "#0091ac", "#FFFFFF", "14px 'Arial','Verdana'", "14px 'Arial','Verdana'", 0, 0], 121, 50);
+        stm_aix("p0i1", "p0i0", [0, "New Members", "", "", -1, -1, 0, "", "_self", "", "", "", "", 0, 0, 0, "blanc.png", "arrow_r.gif", 0, 30], 121, 50);
+        stm_bp("p1", [1, 4, 0, 0, 0, 5, 17, 0, 100, "stEffect(\"slip\")", -2, "stEffect(\"slip\")", -2, 73, 2, 3, "#999999", "transparent", "", 3, 0, 0, "#FFFFFF"]);
+        stm_aix("p1i0", "p0i0", [0, "New Members", "", "", -1, -1, 0, "Default.aspx", "_self", "", "", "blanc.png", "", 17, 20, 0, "", "", 0, 0, 0, 0, 1, "#E6EFF9", 0, "#FFFFFF", 0, "subMenuItemPdf.jpg", "subMenuItemPdf.jpg", 3, 3, 0, 0, "#E6EFF9", "#000000", "#FFFFFF", "#0091ac", "bold 12px 'Arial','Verdana'", "bold 12px 'Arial','Verdana'"], 200, 30);
+        stm_aix("p1i1", "p1i0", [0, "How to Join", "", "", -1, -1, 0, "JoinNow.aspx", "_self", "", "", "", "", 0, 0, 0, "", "", 0, 0, 0, 0, 1, "#E6EFF9", 0, "#FFD602"], 200, 30);
+        stm_aix("p1i2", "p1i1", [0, "Scheme Background", "", "", -1, -1, 0, "../TheScheme/SchemeBackground.aspx"], 200, 30);
+        stm_aix("p1i3", "p1i1", [0, "Rules of the Scheme", "", "", -1, -1, 0, "../TheScheme/SchemeRules.aspx"], 200, 30);
+        stm_aix("p1i4", "p1i1", [0, "Product Overview", "", "", -1, -1, 0, "../TheScheme/SchemeOptions.aspx", "_self", "", "", "", "", 17, 20], 200, 30);
+        stm_aix("p1i5", "p1i1", [0, "Chronic Conditions", "", "", -1, -1, 0, "../TheScheme/ChronicConditionsCovered.aspx"], 200, 30);
+        stm_aix("p1i6", "p1i1", [0, "Downloads", "", "", -1, -1, 0, "Downloads.aspx"], 200, 30);
+        stm_ep();
+        stm_aix("p0i2", "p0i1", [0, "Options"], 121, 50);
+        stm_bpx("p2", "p1", []);
+        stm_aix("p2i0", "p0i0", [0, "Overview", "", "", -1, -1, 0, "../TheScheme/SchemeOptions.aspx", "_self", "", "", "blanc.png", "", 17, 20, 0, "", "", 0, 0, 0, 0, 1, "#E6EFF9", 0, "#FFFFFF", 0, "subMenuItemPdf.jpg", "subMenuItemPdf.jpg", 3, 3, 0, 0, "#E6EFF9", "#000000", "#FFFFFF", "#0091ac", "bold 13px 'Arial','Verdana'", "bold 13px 'Arial','Verdana'"], 200, 30);
+        stm_aix("p2i1", "p2i0", [0, "Pinnacle", "", "", -1, -1, 0, "../TheScheme/Pinnacle.aspx", "_self", "", "", "", "", 0, 0, 0, "", "", 0, 0, 0, 0, 1, "#E6EFF9", 0, "#FFD602"], 200, 30);
+        stm_aix("p2i2", "p2i1", [0, "Dynamix", "", "", -1, -1, 0, "../TheScheme/Dynamix.aspx"], 200, 30);
+        stm_aix("p2i3", "p2i1", [0, "Symmetry", "", "", -1, -1, 0, "../TheScheme/Symmetry.aspx"], 200, 30);
+        stm_aix("p2i4", "p2i1", [0, "Mumed", "", "", -1, -1, 0, "../TheScheme/Mumed.aspx"], 200, 30);
+        stm_aix("p2i5", "p2i1", [0, "Axis ", "", "", -1, -1, 0, "../TheScheme/Axis.aspx"], 200, 30);
+        stm_aix("p2i6", "p2i1", [0, "NetworX", "", "", -1, -1, 0, "../TheScheme/Networx.aspx"], 200, 30);
+        stm_ep();
+        stm_aix("p0i3", "p0i1", [0, "Existing Members"], 132, 50);
+        stm_bpx("p3", "p1", []);
+        stm_aix("p3i0", "p2i0", [0, "Existing Members", "", "", -1, -1, 0, "../ExistingMembers/Default.aspx"], 200, 30);
+        stm_aix("p3i1", "p2i1", [0, "Update Banking Details", "", "", -1, -1, 0, "../ExistingMembers/UpdateBankingDetails.aspx"], 200, 30);
+        stm_aix("p3i2", "p2i1", [0, "Add Dependant", "", "", -1, -1, 0, "../ExistingMembers/AddDependant.aspx"], 200, 30);
+        stm_aix("p3i3", "p2i1", [0, "Membership Cards", "", "", -1, -1, 0, "../ExistingMembers/MembershipCards.aspx"], 200, 30);
+        stm_aix("p3i4", "p2i1", [0, "Change of Address", "", "", -1, -1, 0, "../ExistingMembers/ChangeOfAddress.aspx"], 200, 30);
+        stm_aix("p3i5", "p2i1", [0, "Downloads", "", "", -1, -1, 0, "../ExistingMembers/Downloads.aspx", "_self", "", "", "blanc.png", "", 17, 20], 200, 30);
+        stm_ep();
+        stm_aix("p0i4", "p0i0", [0, "Brokers", "", "", -1, -1, 0, "../Brokers/Default.aspx"], 121, 50);
+        stm_aix("p0i5", "p0i0", [0, "Providers", "", "", -1, -1, 0, "../Providers/Default.aspx"], 121, 50);
+        stm_aix("p0i6", "p0i0", [0, "The Scheme", "", "", -1, -1, 0, "", "_self", "", "", "", "", 0, 0, 0, "blanc.png", "arrow_r.gif", 0, 30, 0, 1, 1, "#E6EFF9", 0, "#FFFFFF", 0, "ButtonsNormal.jpg", "buttonsOver.jpg", 1, 3], 121, 50);
+        stm_bpx("p4", "p1", []);
+        stm_aix("p4i0", "p2i0", [0, "The Scheme", "", "", -1, -1, 0, "../TheScheme/Default.aspx"], 200, 30);
+        stm_aix("p4i1", "p2i1", [0, "Scheme Options", "", "", -1, -1, 0, "../TheScheme/SchemeOptions.aspx"], 200, 30);
+        stm_aix("p4i2", "p2i1", [0, "Rules of the Scheme", "", "", -1, -1, 0, "../TheScheme/SchemeRules.aspx"], 200, 30);
+        stm_aix("p4i3", "p2i1", [0, "Managed Care Initiatives", "", "", -1, -1, 0, "../TheScheme/ManagedCareInitiatives.aspx"], 200, 30);
+        stm_aix("p4i4", "p2i1", [0, "Scheme Service Providers", "", "", -1, -1, 0, "../TheScheme/Partners.aspx"], 200, 30);
+        stm_aix("p4i5", "p2i1", [0, "In the News", "", "", -1, -1, 0, "../TheScheme/News.aspx"], 200, 30);
+        stm_aix("p4i6", "p2i1", [0, "Chronic Conditions", "", "", -1, -1, 0, "../TheScheme/ChronicConditionsCovered.aspx"], 200, 30);
+        stm_aix("p4i7", "p3i5", [0, "Downloads", "", "", -1, -1, 0, "../TheScheme/Downloads.aspx"], 200, 30);
+        stm_ep();
+        stm_aix("p0i7", "p0i0", [0, "ContactUs", "", "", -1, -1, 0, "../ContactUs.aspx"], 121, 50);
+        stm_ep();
+        stm_em();
+//-->
+    </script>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ImageScroller" runat="server">
+    <Bewise:FlashControl ID="FlashControl1" runat="server" Scale="Exactfit" Width="979px"
+        Height="359px" Loop="true" MovieUrl="~/Flash/newMembers.swf" WMode="Opaque" />
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="SubNavigation" runat="server">
+    <br />
+    <asp:ContentPlaceHolder ID="PageSubNav" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="body" runat="server">
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <td style="padding:20px; width:939px; text-align:justify; background-color:White">
+                <asp:ContentPlaceHolder ID="pageBody" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+</asp:Content>
+<asp:Content ID="Content6" ContentPlaceHolderID="footer" runat="server">
+    <table cellpadding="0" cellspacing="0" align="center" class="footerContent">
+        <tr>
+            <td class="footerCopyright">
+                &copy; Copyright CompCare Wellness.
+                <br />
+                All rights reserved, 2012
+            </td>
+            <td class="footerlinks">
+                <table cellpadding="5" cellspacing="0" class="footerA">
+                    <tr>
+                        <td style="width: 10px">
+                            <img src="../Images/bullet.png" alt="" />
+                        </td>
+                        <td>
+                            <a href="../Default.aspx">Home</a>
+                        </td>
+                        <td style="width: 10px">
+                            <img src="../Images/bullet.png" alt="" />
+                        </td>
+                        <td>
+                            <a href="../ExistingMembers/Default.aspx">Members Area</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 10px">
+                            <img src="../Images/bullet.png" alt="" />
+                        </td>
+                        <td>
+                            <a href="../TheScheme/Default.aspx">The Scheme</a>
+                        </td>
+                        <td style="width: 10px">
+                            <img src="../Images/bullet.png" alt="" />
+                        </td>
+                        <td>
+                            <a href="../NewMembers/Default.aspx">New Members</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 10px">
+                            <img src="../Images/bullet.png" alt="" />
+                        </td>
+                        <td>
+                            <a href="../TheScheme/Partners.aspx">Scheme Service Providers</a>
+                        </td>
+                        <td style="width: 10px">
+                            <img src="../Images/bullet.png" alt="" />
+                        </td>
+                        <td>
+                            <a href="../Providers/Default.aspx">Providers Area</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 10px">
+                            <img src="../Images/bullet.png" alt="" />
+                        </td>
+                        <td>
+                            <a href="../ContactUs.aspx">Contact Us</a>
+                        </td>
+                        <td style="width: 10px">
+                            <img src="../Images/bullet.png" alt="" /></td>
+                        <td>
+                            <a href="../TheScheme/SchemeNMP.master">Scheme Options</a></td>
+                    </tr>
+                </table>
+            </td>
+            <td class="">
+                &nbsp;
+            </td>
+            <td class="footerTwitterLink">
+                &nbsp;
+            </td>
+            <td class="footerUniversalLogo">
+                <img src="../Images/footerUniversalLogo.jpg" alt="Managed by Universal Healthcare" />
+            </td>
+        </tr>
+    </table>
+</asp:Content>
+

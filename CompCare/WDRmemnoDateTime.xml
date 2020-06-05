@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DocumentRequest>
+  <Type>IRP5</Type><!--or <Type>Statement</Type>-->
+  <DateFrom>yyyyMMdd</DateFrom> <!-- empty if IRP5 -->
+  <DateTo>yyyyMMdd</DateTo>
+  <PracticeNumber>XXXXXXX</PracticeNumber> <!--"7 characters. Empty if request is from member"-->
+  <MemberNumber>XXXXXXXXXXXXX</MemberNumber> <!--"13 Characters. Empty if request is from Provider"-->
+  <EmailAddress>XXXX@XXX.co.za</EmailAddress>
+</DocumentRequest>
